@@ -1,0 +1,40 @@
+.gallery-item {
+  width: 50px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #777;
+  position: relative;
+}
+
+.gallery-item .gallery-remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(119, 119, 119, 0.8);
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-placeholder {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 1px dashed #777;
+}
+
+/*# sourceMappingURL=../../sourcemaps/admin/gallery.css.map */
