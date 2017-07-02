@@ -4,6 +4,7 @@
  *
  * @package Gallery_Meta_Box
  * @author Truong Giang <truongwp@gmail.com>
+ * @version 0.1.0
  */
 
 if ( defined( 'TRUONGWP_GALLERY_META_BOX_PATH' ) ) {
