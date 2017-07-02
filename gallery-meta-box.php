@@ -16,5 +16,11 @@ define( 'TRUONGWP_GALLERY_META_BOX_URL', plugin_dir_url( __FILE__ ) );
 
 require_once TRUONGWP_GALLERY_META_BOX_PATH . 'class-truongwp-gallery-meta-box.php';
 
-$meta_box = new Truongwp_Gallery_Meta_Box();
-$meta_box->init();
+/**
+ * Initialize.
+ */
+function truongwp_gallery_meta_box_init() {
+	$meta_box = new Truongwp_Gallery_Meta_Box();
+	$meta_box->init();
+}
+add_action( 'plugins_loaded', 'truongwp_gallery_meta_box_init' );
