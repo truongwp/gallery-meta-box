@@ -1,3 +1,3 @@
 ## Gallery Meta Box
 
-This is a library ofr including in plugin, not a WordPress plugin.
+This is a library for including in plugin, not a WordPress plugin.
