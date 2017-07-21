@@ -10,7 +10,7 @@ Or you can include file `gallery-meta-box.php`.
 
 ### Hooks reference
 
-```
+```php
 /**
  * Fires after saving gallery data.
  *
@@ -21,7 +21,7 @@ Or you can include file `gallery-meta-box.php`.
 do_action( 'gallery_meta_box_save', $post_id, $post, $update );
 ```
 
-```
+```php
 /**
  * Filters supported post types.
  *
@@ -30,7 +30,7 @@ do_action( 'gallery_meta_box_save', $post_id, $post, $update );
 apply_filters( 'gallery_meta_box_post_types', $post_types );
 ```
 
-```
+```php
 /**
  * Filters meta key to store the gallery.
  *
