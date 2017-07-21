@@ -59,7 +59,7 @@ class Truongwp_Gallery_Meta_Box {
 	 *
 	 * @param int     $post_id Post id.
 	 * @param WP_Post $post    Post object.
-	 * @param boolean $update  Is updating or not.
+	 * @param bool    $update  Is updating or not.
 	 * @return mixed
 	 */
 	public function save( $post_id, $post, $update ) {
@@ -102,7 +102,11 @@ class Truongwp_Gallery_Meta_Box {
 		}
 
 		/**
-		 * Fires after save gallery data.
+		 * Fires after saving gallery data.
+		 *
+		 * @var int     $post_id Post ID.
+		 * @var WP_Post $post    Post object.
+		 * @var bool    $update  Whether this is an existing post being updated or not.
 		 */
 		do_action( 'gallery_meta_box_save', $post_id, $post, $update );
 
@@ -162,7 +166,14 @@ class Truongwp_Gallery_Meta_Box {
 	 * @return array
 	 */
 	protected function post_types() {
-		return apply_filters( 'gallery_meta_box_post_types', array( 'post' ) );
+		$post_types = array( 'post' );
+
+		/**
+		 * Filters supported post types.
+		 *
+		 * @var array $post_types List supported post types.
+		 */
+		return apply_filters( 'gallery_meta_box_post_types', $post_types );
 	}
 
 	/**
@@ -171,9 +182,19 @@ class Truongwp_Gallery_Meta_Box {
 	 * @return string
 	 */
 	protected function meta_key() {
+		/**
+		 * Filters meta key to store the gallery.
+		 *
+		 * @var string $meta_key Meta key.
+		 */
 		return apply_filters( 'gallery_meta_box_meta_key', 'truongwp_gallery' );
 	}
 
+	/**
+	 * Check if is in editing screen.
+	 *
+	 * @return bool
+	 */
 	protected function is_editing_screen() {
 		$screen = get_current_screen();
 		return in_array( $screen->id, $this->post_types() );
