@@ -11,6 +11,9 @@ if ( defined( 'TRUONGWP_GALLERY_META_BOX_PATH' ) ) {
 	return;
 }
 
+/*
+ * Change these value if need.
+ */
 define( 'TRUONGWP_GALLERY_META_BOX_PATH', get_template_directory() . '/gallery-meta-box/' );
 define( 'TRUONGWP_GALLERY_META_BOX_URL', get_template_directory_uri() . '/gallery-meta-box/' );
 
