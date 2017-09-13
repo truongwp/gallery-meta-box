@@ -1,10 +1,7 @@
 ( function( $ ) {
 	"use strict";
 
-	var minbooker = window.minbooker || {},
-		gallery;
-
-	minbooker.gallery = gallery = {
+	var gallery = window.truongwpGallery = {
 
 		buttonId: '#truongwp-add-gallery',
 
