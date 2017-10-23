@@ -14,8 +14,8 @@ if ( defined( 'TRUONGWP_GALLERY_META_BOX_PATH' ) ) {
 /*
  * Change these value if need.
  */
-define( 'TRUONGWP_GALLERY_META_BOX_PATH', get_template_directory() . '/gallery-meta-box/' );
-define( 'TRUONGWP_GALLERY_META_BOX_URL', get_template_directory_uri() . '/gallery-meta-box/' );
+define( 'TRUONGWP_GALLERY_META_BOX_PATH', get_stylesheet_directory() . '/gallery-meta-box/' );
+define( 'TRUONGWP_GALLERY_META_BOX_URL', get_stylesheet_directory_uri() . '/gallery-meta-box/' );
 
 require_once TRUONGWP_GALLERY_META_BOX_PATH . 'class-truongwp-gallery-meta-box.php';
 
